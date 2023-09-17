@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react'
+import { Github, FileVideo } from 'lucide-react'
 import { Button } from "./components/ui/button";
 import { Separator } from '@radix-ui/react-separator';
 import { Textarea } from './components/ui/textarea';
@@ -41,7 +41,23 @@ export function App() {
             Lembre-se: você pode utilizar a variável <code className='text-violet-400'>{'{transcription}'}</code> no seu prompt para adicionar o conteúdo da transcrição do vídeo selecionado.
           </p>
         </div>
-        <aside className='w-80'></aside>
+
+        <aside className='w-80 space-y-6'>
+          <form className='space-y-6'>
+            <label 
+              htmlFor="video"
+              className='border flex rounded-md aspect-video cursor-pointer border-dashed text-sm flex-col gap-2 items-center justify-center hover:bg-primary/5'
+            >
+              <FileVideo className='w-4 h-4' />
+              Selecione um vídeo
+            </label>
+
+            <input type="file" id='video' accept='video/mp4' className='sr-only'/>
+
+            <Separator />
+
+          </form>
+        </aside>
       </main>
       
     </div>
