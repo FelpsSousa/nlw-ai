@@ -1,7 +1,8 @@
-import { Github, FileVideo } from 'lucide-react'
+import { Github, FileVideo, Upload } from 'lucide-react'
 import { Button } from "./components/ui/button";
 import { Separator } from '@radix-ui/react-separator';
 import { Textarea } from './components/ui/textarea';
+import { Label } from '@radix-ui/react-label';
 
 export function App() {
   return (
@@ -56,7 +57,24 @@ export function App() {
 
             <Separator />
 
+            <div className='space-y-1'>
+              <Label htmlFor='transcription_prompt'>Prompt de transcrição</Label>
+              <Textarea
+                id='transcription_prompt'
+                className='min-h-20 leading-relaxed'
+                placeholder='Inclua palavras-chave mencionadas no vídeo separadas por vírgula ( , )'
+              />
+            </div>
+
+            <Button type='submit' className='w-full'>
+              Carregar vídeo
+              <Upload className='w-4 h-4 ml-2' />
+            </Button>
+
           </form>
+
+          <Separator />
+          
         </aside>
       </main>
       
