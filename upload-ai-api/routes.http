@@ -16,10 +16,10 @@ Content-Type: audio/mpeg
 
 ###
 
-# @name create-transcription 
-POST http://localhost:3333/videos/5b725fd3-adff-41c8-b8a2-33508314d5ba/transcription
+# @name create-transcription
+POST http://localhost:3333/videos/97fc30c5-89aa-4c29-b708-7a3a521f0568/transcription
 Content-Type: application/json
 
 {
-  "prompt": "shadcn-ui, typescript, inteligência"
+  "prompt": "viagem, volta"
 }
