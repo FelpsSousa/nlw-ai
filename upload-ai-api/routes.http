@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "viagem, volta"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "97fc30c5-89aa-4c29-b708-7a3a521f0568",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
+}
