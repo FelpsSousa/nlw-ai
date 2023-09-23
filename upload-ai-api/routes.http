@@ -17,11 +17,11 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/97fc30c5-89aa-4c29-b708-7a3a521f0568/transcription
+POST http://localhost:3333/videos/f9a2c992-f6d3-4245-87fb-a99f98502535/transcription
 Content-Type: application/json
 
 {
-  "prompt": "viagem, volta"
+  "prompt": "viagem"
 }
 
 ###
@@ -31,7 +31,7 @@ POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
-  "videoId": "97fc30c5-89aa-4c29-b708-7a3a521f0568",
+  "videoId": "f9a2c992-f6d3-4245-87fb-a99f98502535",
   "temperature": 0.5,
   "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
 }
