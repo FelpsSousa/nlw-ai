@@ -76,7 +76,7 @@ export function VideoInputForm() {
     
     const audioFile = await convertVideoToAudio(videoFile)
 
-    console.log(audioFile)
+    console.log(audioFile, prompt)
   }
 
   const previewURL = useMemo(() => {
