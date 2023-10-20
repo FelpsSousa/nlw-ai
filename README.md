@@ -42,7 +42,7 @@ Pronto! Agora a aplicação estará pronta pára rodar no navegador. `http://loc
 ## Capturas de Tela
 
 ### Tela de Upload
-![Tela de Upload](/screenshots/video-carregando.png)
+![Tela de Upload](/screenshots/video-carregado.png)
 ---
 ### Opções de Processamento: Título.
 ![Tela de Opções](/screenshots/gerando-titulo.png)
